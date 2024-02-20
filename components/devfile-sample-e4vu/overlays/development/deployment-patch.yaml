@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-e4vu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0052-tenant/tkrw-pr714-0075-0052-app/devfile-sample-e4vu@sha256:47553f4cc8dddded0509a84c804d58d584630ee264f1a04a7d3eda940216c49d
+        name: my-nodejs
+        resources: {}
+status: {}
